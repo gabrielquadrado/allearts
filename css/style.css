@@ -1,0 +1,17 @@
+/*CUSTOM CSS*/
+.m-r-10 {
+	margin-right: 10px!important;
+}
+div.content > img.header {
+	position: absolute;
+	padding: 0;
+	top: 0;
+	left: 0;
+}
+.navbar {
+	background-color: transparent;
+	border-color: transparent;
+}
+.navbar a {
+	color: #e6e6e6 !important;
+}
