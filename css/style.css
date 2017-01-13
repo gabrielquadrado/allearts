@@ -1,12 +1,17 @@
 /*CUSTOM CSS*/
+body {
+	font-family: 'Nunito Sans', sans-serif;
+}
 .m-r-10 {
 	margin-right: 10px!important;
 }
-div.content > img.header {
-	position: absolute;
-	padding: 0;
-	top: 0;
-	left: 0;
+div.img-container {
+    height: 490px;
+}
+img.header {
+	position: relative;
+    padding: 0;
+    top: -120px;
 }
 .navbar {
 	background-color: transparent;
@@ -14,4 +19,24 @@ div.content > img.header {
 }
 .navbar a {
 	color: #e6e6e6 !important;
+}
+.navbar .navbar-header .navbar-brand {
+	font-family: 'Meie Script', cursive;
+    font-size: 45px;
+    margin: 0 0 0 3px;
+    padding-top: 19px;
+}
+div.img-container span {
+	font-family: 'Meie Script', cursive;
+	color: rgb(255, 255, 255)!important;
+    position: absolute;
+    font-size: 200px;
+    z-index: 1;
+    line-height: 490px;
+    width: 100%;
+    text-align: center;
+}
+div.who-container p {
+	margin-top: -120px;
+	padding: 40px;
 }
