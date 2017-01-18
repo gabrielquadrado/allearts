@@ -1,4 +1,26 @@
-/*CUSTOM CSS*/
+/*RESPONSIVES*/
+@media only screen and (max-width: 767px) {
+	div.img-container span {
+		font-size: 120px!important;
+		line-height: 290px!important;
+	}
+	div.img-container {
+	    height: 290px!important;
+	}
+}
+@media only screen and (max-width: 450px) {
+	div.img-container span {
+		font-size: 80px!important;
+		line-height: 190px!important;
+	}
+	div.img-container {
+	    height: 190px!important;
+	}
+	div.navbar-header a.navbar-brand {
+		font-size: 25px!important;
+	}
+}
+/*END OF RESPONSIVES*/
 body {
 	font-family: 'Nunito Sans', sans-serif;
 }
@@ -7,20 +29,39 @@ body {
 }
 div.img-container {
     height: 490px;
+    overflow: hidden;
 }
 img.header {
-	position: relative;
-    padding: 0;
-    top: -120px;
+	padding: 0;
+	height: 100%;
+	width: auto;
 }
-.navbar {
+nav.navbar {
 	background-color: transparent;
 	border-color: transparent;
+	transition: all .5s ease;
 }
-.navbar a {
+nav.navbar.nav-solid {
+	background-color: rgba(0,0,0,0.8);
+	border-color: rgba(0,0,0,0.8);
+	transition: all .5s ease;
+}
+nav.navbar a {
 	color: #e6e6e6 !important;
 }
-.navbar .navbar-header .navbar-brand {
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: rgb(255, 255, 255) !important;
+	font-weight: bolder;
+	outline:none;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: rgb(81, 81, 81);
+    transition: all .5s ease;
+}
+nav.navbar div.navbar-header a.navbar-brand {
 	font-family: 'Meie Script', cursive;
     font-size: 45px;
     margin: 0 0 0 3px;
@@ -28,15 +69,22 @@ img.header {
 }
 div.img-container span {
 	font-family: 'Meie Script', cursive;
-	color: rgb(255, 255, 255)!important;
-    position: absolute;
-    font-size: 200px;
-    z-index: 1;
-    line-height: 490px;
-    width: 100%;
-    text-align: center;
+	color: rgb(255, 255, 255);
+	position: absolute;
+	font-size: 200px;
+	z-index: 1;
+	line-height: 490px;
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
 }
-div.who-container p {
-	margin-top: -120px;
+div.about-container p {
 	padding: 40px;
+	height: 600px;
+}
+nav.navbar div.navbar-header ul.nav.navbar-nav li > a.nav-item:hover {
+	color: rgb(194, 194, 194);
+}
+section > div.container > div.row > div.content {
+	padding: 50px 0 0 0;
 }
