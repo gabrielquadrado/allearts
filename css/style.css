@@ -39,12 +39,10 @@ img.header {
 nav.navbar {
 	background-color: transparent;
 	border-color: transparent;
-	transition: all .5s ease;
 }
 nav.navbar.nav-solid {
 	background-color: rgba(0,0,0,0.8);
 	border-color: rgba(0,0,0,0.8);
-	transition: all .5s ease;
 }
 nav.navbar a {
 	color: #e6e6e6 !important;
@@ -78,13 +76,17 @@ div.img-container span {
 	text-align: center;
 	padding-top: 20px;
 }
-div.about-container p {
-	padding: 40px;
-	height: 600px;
+section.about .container p img.ornamental2 {
+	margin: 100px;
 }
 nav.navbar div.navbar-header ul.nav.navbar-nav li > a.nav-item:hover {
 	color: rgb(194, 194, 194);
 }
 section > div.container > div.row > div.content {
-	padding: 50px 0 0 0;
+	padding: 100px 90px 0 90px;
+}
+section > div.container > div.row > div.content p {
+	font-size: 22px;
+	color: #757575;
+	text-align: center;
 }
