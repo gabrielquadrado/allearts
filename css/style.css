@@ -7,6 +7,10 @@
 	div.img-container {
 	    height: 290px!important;
 	}
+	nav.navbar {
+		background-color: rgba(0,0,0,0.8)!important;
+		border-color: rgba(0,0,0,0.8)!important;
+	}
 }
 @media only screen and (max-width: 450px) {
 	div.img-container span {
@@ -23,6 +27,9 @@
 /*END OF RESPONSIVES*/
 body {
 	font-family: 'Nunito Sans', sans-serif;
+}
+h4 {
+	font-family: 'Meie Script', cursive;
 }
 .m-r-10 {
 	margin-right: 10px!important;
@@ -50,7 +57,6 @@ nav.navbar a {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
 	color: rgb(255, 255, 255) !important;
-	font-weight: bolder;
 	outline:none;
 }
 .navbar-default .navbar-nav>.active>a,
@@ -83,10 +89,25 @@ nav.navbar div.navbar-header ul.nav.navbar-nav li > a.nav-item:hover {
 	color: rgb(194, 194, 194);
 }
 section > div.container > div.row > div.content {
-	padding: 100px 90px 0 90px;
+	padding: 100px 90px 100px 90px;
 }
 section > div.container > div.row > div.content p {
 	font-size: 22px;
 	color: #757575;
 	text-align: center;
+}
+section .container .row h4 {
+	width: 100%;
+	text-align: center;
+	font-size: 80px;
+	margin-top: 70px;	
+	margin-bottom: 30px;
+}
+section .container .row.galery-container a > img.img-fluid {
+	width: 100%;
+	height: auto;
+	margin-bottom: 30px;
+}
+.ekko-lightbox-nav-overlay span{
+	color: #6d6d6d !important;
 }
