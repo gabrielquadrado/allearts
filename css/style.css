@@ -169,6 +169,7 @@ div.img-container span {
 }
 section div.container {
 	padding: 30px;
+	padding-bottom: 100px;
 }
 hr {
 	width: 90%;
@@ -180,18 +181,19 @@ nav.navbar div.navbar-header ul.nav.navbar-nav li > a.nav-item:hover {
 	color: rgb(194, 194, 194);
 }
 section > div.container > div.row > div.content {
-	padding: 20px 120px 100px 120px;
+	padding: 20px 120px 0 120px;
 }
 section > div.container > div.row > div.content p {
 	font-size: 22px;
 	color: #757575;
 	text-align: center;
+	letter-spacing: 2px;
 }
 section .container .row h4 {
 	width: 100%;
 	text-align: center;
 	font-size: 80px;
-	margin-top: 70px;	
+	margin-top: 70px;
 	margin-bottom: 30px;
 	letter-spacing: 20px;
 }
